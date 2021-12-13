@@ -15,6 +15,15 @@ const userSchema = new Schema({
 		type: String,
 		required: true,
 	},
+	streetAddress: {
+		type: String,
+		required: false,
+	},
+	isAdmin: {
+		type: Boolean,
+		required: true,
+		default: false,
+	},
 	isLoggedIn: {
 		type: Boolean,
 		required: true,

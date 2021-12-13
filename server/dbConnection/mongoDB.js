@@ -20,6 +20,7 @@ class MongDBConnection {
 }
 
 const MONGO_URI = process.env.MONGODB_URI;
+console.log(MONGO_URI);
 
 const mongdbConnection = new MongDBConnection(MONGO_URI);
 
